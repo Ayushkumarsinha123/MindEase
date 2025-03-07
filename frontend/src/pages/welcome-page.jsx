@@ -11,7 +11,7 @@ function WelcomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Find Your Inner Peace !
+        Harshit run-d hai
       </motion.h1>
 
       <motion.button
