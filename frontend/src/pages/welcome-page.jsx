@@ -12,7 +12,7 @@ function WelcomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Find Your Inner Peace
+        Find Your Inner Peace with MindEase
       </motion.h1>
 
       <motion.button
