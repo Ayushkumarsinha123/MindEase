@@ -35,7 +35,7 @@ function MoodJournal() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-2xl font-medium mb-4">Write Your Journal Entry</h2>
+        <h2 className="text-2xl font-medium mb-4">what's on your mind</h2>
         <textarea
           className="w-full h-40 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400"
           placeholder="Write about your feelings, experiences, or thoughts..."

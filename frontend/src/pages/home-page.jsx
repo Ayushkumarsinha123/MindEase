@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function HomePage() {
-  const [mood, setMood] = useState(""); // Store selected mood
+  const [mood, setMood] = useState(""); 
 
-  // Mood-based suggestions
+  
   const moodSuggestions = {
     "😊": "That's great! Keep up the positivity. Try sharing a gratitude journal entry today. 🌿",
     "😐": "Feeling neutral? Take a mindful walk or listen to some relaxing music. 🎶",
@@ -17,7 +17,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-100 to-white text-gray-700 p-6">
       
-      {/* Navbar */}
+      
       <nav className="flex justify-between items-center py-4">
         <h1 className="text-2xl font-semibold">MindEase</h1>
         <div className="space-x-6">
@@ -28,7 +28,7 @@ function HomePage() {
         </div>
       </nav>
 
-      {/* Mood Tracker */}
+      
       <motion.div 
         className="flex flex-col items-center text-center mt-10"
         initial={{ opacity: 0, y: -20 }}
@@ -50,7 +50,7 @@ function HomePage() {
         </div>
       </motion.div>
 
-      {/* Mood-Based Suggestion Box */}
+      
       {mood && (
         <motion.div 
           className="mt-8 p-6 bg-white shadow-lg rounded-lg text-center max-w-lg mx-auto"
