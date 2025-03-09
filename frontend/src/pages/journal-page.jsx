@@ -1,7 +1,7 @@
 import React from 'react';  
 import {motion} from "framer-motion";
-import {Link} from "react-router-dom"; 
 import { useState } from 'react'; 
+import Navbar from '../components/navbar';
 
 function MoodJournal() {
   const [entry, setEntry] = useState(""); 
@@ -17,16 +17,7 @@ function MoodJournal() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-100 to-white text-gray-700 p-6">
       
-      
-      <nav className="flex justify-between items-center py-4">
-        <h1 className="text-2xl font-semibold">MindEase</h1>
-        <div className="space-x-6">
-          <Link to="/home" className="text-gray-600 hover:text-green-500">Home</Link>
-          <Link to="/journal" className="text-gray-600 hover:text-green-500">Mood Journal</Link>
-          <Link to="/insights" className="text-gray-600 hover:text-green-500">Insights</Link>
-          <Link to="/settings" className="text-gray-600 hover:text-green-500">Settings</Link>
-        </div>
-      </nav>
+      <Navbar/>
 
       
       <motion.div 
