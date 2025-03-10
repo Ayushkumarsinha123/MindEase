@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import Navbar from "../components/navbar";
+import CalendarStreak from "../components/calender";
 
 function HomePage() {
   const [mood, setMood] = useState(""); 
@@ -45,16 +46,18 @@ function HomePage() {
 
       
       {mood && (
-        <motion.div 
-          className="mt-8 p-6 bg-white shadow-lg rounded-lg text-center max-w-lg mx-auto"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h3 className="text-xl font-semibold">Suggestion for You:</h3>
-          <p className="mt-2 text-gray-600">{moodSuggestions[mood]}</p>
-        </motion.div>
-      )}
+  <motion.div 
+    className="mt-8 mb-8 p-6 bg-white shadow-lg rounded-lg text-center max-w-lg mx-auto"
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <h3 className="text-xl font-semibold">Suggestion for You:</h3>
+    <p className="mt-2 text-gray-600">{moodSuggestions[mood]}</p>
+  </motion.div>
+)}
+
+<CalendarStreak className="mt-8" />
     </div>
   );
 }
